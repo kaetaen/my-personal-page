@@ -1,0 +1,43 @@
+.pallete {
+  color: #241627;
+  color: #1a1825;
+  color: #10152d;
+  color: #102d2b;
+  color: #22221b;
+  color: #331d0a;
+  color: #3d1701;
+  color: #523314;
+  color: #f8f8f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  color: #f8f8f2;
+  box-sizing: border-box;
+  background-color: #22221b;
+}
+
+.menu{
+  position: fixed;
+}
+
+#initial-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+#about-me {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
+
