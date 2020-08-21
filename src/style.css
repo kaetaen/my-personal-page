@@ -17,27 +17,63 @@
   font-size: 1.0em;
   color: #f8f8f2;
   box-sizing: border-box;
+}
+
+.interface {
   background-color: #22221b;
 }
 
-.menu{
-  position: fixed;
-}
+  .menu{
+    position: fixed;
+    background-color: #241627;
+  }
 
-#initial-cover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh;
-}
+   .menu h1 {
+      font-size: 1.4em;
+    }
 
-#about-me {
-  height: 100vh;
-}
+    .menu nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-#projects {
-  height: 100vh;
-}
+      width: 100vw;
+      padding: 10px;
+    }
+
+      .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin-right: 10px;
+        padding-top: 5px;
+        list-style: none;
+      }
+
+        .menu li {
+          padding: 0px 10px 0px 10px; 
+        }
+
+          .menu a {
+            text-decoration: none;
+          }
+
+
+  #initial-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+  #about-me {
+    height: 100vh;
+  }
+
+  #projects {
+    height: 100vh;
+  }
 
 
