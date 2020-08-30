@@ -17,8 +17,16 @@ function menuResponsiveBehavior() {
   }
 }
 
+function typewriterEffect (elem) {
+  const text = document.querySelector(elem)
+  const textArray = text.innerHTML.split('')
+  text.innerHTML = ''
 
-window.onload = function () {
-  menuResponsiveBehavior()
+  textArray.forEach((letter, index) => {
+    setTimeout(() => text.innerHTML += letter, 25 * index)
+  })
+
 }
 
+window.addEventListener('load', menuResponsiveBehavior)
+window.addEventListener('load', typewriterEffect('.content p'))

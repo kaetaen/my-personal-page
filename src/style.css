@@ -109,13 +109,49 @@
   #initial-cover {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     height: 100vh;
+    padding-left: 3em;
   }
 
+    .content {
+      padding-right: 20px;
+    }
+
+      .content h1 {
+        font-size: 2em;
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+
+      .content p {
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: justify;
+      }
+
+      .content p::after {
+        content: '|';
+        animation: blinker .7s infinite;
+      }
+
+      @keyframes blinker {
+        0%, 100% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
   #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100vh;
+    padding-left: 3em;
+    padding-right: 5px;
   }
 
   #projects {
