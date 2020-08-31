@@ -25,8 +25,12 @@ function typewriterEffect (elem) {
   textArray.forEach((letter, index) => {
     setTimeout(() => text.innerHTML += letter, 25 * index)
   })
-
 }
 
 window.addEventListener('load', menuResponsiveBehavior)
-window.addEventListener('load', typewriterEffect('.content p'))
+window.addEventListener('load', () => {
+  typewriterEffect('#initial-cover p')
+  typewriterEffect('#about-me p')
+})
+
+
