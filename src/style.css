@@ -114,7 +114,10 @@
   }
 
     .content {
+      padding-top: 10px;
+      padding-bottom: 10px;
       padding-right: 20px;
+      overflow: auto;
     }
 
       .content h1 {
@@ -142,4 +145,8 @@
         50% {
           opacity: 0;
         }
+      }
+
+      #about-me {
+        background-color:#331d0a ; 
       }
