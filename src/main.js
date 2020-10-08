@@ -30,7 +30,6 @@ function typewriterEffect (elem) {
 function carousel() {
   const time = 3000, images = document.querySelectorAll('.img')
   let currentImageIndex = 0, max = images.length;
-  const links = ['livetube', 'angler', 'flylife', '']
 
   function nextImage () {
     images[currentImageIndex].classList.remove('selected')
@@ -48,8 +47,6 @@ function carousel() {
 
 window.addEventListener('load', () => {
   typewriterEffect('#initial-cover p')
-  typewriterEffect('#about-me p')
-  typewriterEffect('#projects p')
   menuResponsiveBehavior()
   carousel()
 })
